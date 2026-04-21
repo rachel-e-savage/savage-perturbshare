@@ -11,3 +11,6 @@ Going from CisTopic iterations to reliable programs can be found:
 code/Topics_to_Reliable_Programs
 
 seq2PRINT can be found: code/Data_Analysis/scPrinter_seq_RSav_morf.ipynb
+
+I'll continue updating this with more detailed analysis! Don't hesitate to reach out with any questions:
+rachelsavage@g.harvard.edu
