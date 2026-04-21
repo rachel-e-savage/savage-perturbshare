@@ -38,6 +38,10 @@ The sublibraries were pooled and sequenced over multiple NovaX runs and lanes. T
 7. Create cells x peak matrix for atac with new peakset
 	- [code/Initial_Data_Processing/makeatacmatrix.ipynb](code/Initial_Data_Processing/makeatacmatrix.ipynb)
  	- Here i'm also removing doublets, that I called based on genotyping from: [code/Initial_Data_Processing/Donor_calling_and_doublet.ipynb](code/Initial_Data_Processing/Donor_calling_and_doublet.ipynb)
+8. Create cells x genes matrix for RNA
+	- [code/Initial_Data_Processing/makernamatrix.ipynb](code/Initial_Data_Processing/makernamatrix.ipynb)
+10. Compile everything for single cell metadata
+    - [code/Initial_Data_Processing/metadata.extraction.ipynb](code/Initial_Data_Processing/metadata.extraction.ipynb)
 
 
 
