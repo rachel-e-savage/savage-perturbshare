@@ -10,7 +10,7 @@ The sublibraries were pooled and sequenced over multiple NovaX runs and lanes. T
 	- [code/Initial_Data_Processing/Filter_Cells.ipynb](code/Initial_Data_Processing/Filter_Cells.ipynb)
  		- Here we do a preliminary filter of cells. We load in the metadata of the atac librarys from the files ending in `*barcode.summary.csv`. We construct knee plots based on total mapped reads per cell, to filter out low quality cells. We use a generic T cell peak set to calculate (you can also easily use here encode cCRE peaks) the fraction of reads falling in peaks (FRIP). Debris, and dying cells get tagmented everywhere in their genome, so have low FRIP. We then filter cells based on FRIP and unique reads. 
 2. Create RNA matrices using filtered cells
-	- [code/Initial_Data_Processing/Filter_Cells.ipynb](code/Initial_Data_Processing/Filter_Cells.ipynb)
+	- [code/Initial_Data_Processing/Filter_Cells_RNA.ipynb](code/Initial_Data_Processing/Filter_Cells_RNA.ipynb)
  		- Using the barcodes that passed the final ATAC filtering, we create counts matrices for RNA using only these cell barcodes.  
 3. Call the donor based on genotype demulitplexing
 	- [code/Initial_Data_Processing/bash_scripts/donor_demux.sh](code/Initial_Data_Processing/bash_scripts/donor_demux.sh)
@@ -37,17 +37,7 @@ The sublibraries were pooled and sequenced over multiple NovaX runs and lanes. T
 	- [code/Initial_Data_Processing/filterpeaks.ipynb](code/Initial_Data_Processing/filterpeaks.ipynb)
 7. Create cells x peak matrix for atac with new peakset
 	- [code/Initial_Data_Processing/makeatacmatrix.ipynb](code/Initial_Data_Processing/makeatacmatrix.ipynb)
-		- Here i'm also removing doublets, that I called based on genotyping from: [code/Initial_Data_Processing/Donor_calling_and_doublet.ipynb](code/Initial_Data_Processing/Donor_calling_and_doublet.ipynb)
-
-# Deeper analysis 
-## cisTopic on ATAC
-### Workflow steps: 
-1. [code/atac_cistopic_scmallet](code/atac_cistopic_scmallet)
-2. [code/atac_cistopic_scmallet]()
-
-## Topic calling on RNA 
-
-
+ 	- Here i'm also removing doublets, that I called based on genotyping from: [code/Initial_Data_Processing/Donor_calling_and_doublet.ipynb](code/Initial_Data_Processing/Donor_calling_and_doublet.ipynb)
 
 
 
