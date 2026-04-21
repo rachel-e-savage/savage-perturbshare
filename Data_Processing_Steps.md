@@ -13,7 +13,7 @@ The sublibraries were pooled and sequenced over multiple NovaX runs and lanes. T
 	- [code/Initial_Data_Processing/Filter_Cells_RNA.ipynb](code/Initial_Data_Processing/Filter_Cells_RNA.ipynb)
  		- Using the barcodes that passed the final ATAC filtering, we create counts matrices for RNA using only these cell barcodes.  
 3. Call the donor based on genotype demulitplexing
-	- [code/Initial_Data_Processing/bash_scripts/donor_demux.sh](code/Initial_Data_Processing/bash_scripts/donor_demux.sh)
+	- [code/Initial_Data_Processing/donor_demux.sh](code/Initial_Data_Processing/donor_demux.sh)
  		- This is a shell script that calls genotype of the 3 donors, given 3 bam files that we generated using bulk-ATAC of the donors. Then, we input the bam files from the SHARE-seq, and demultiplex each single cell by its donor using Dropseq tools. 
 	- [code/Initial_Data_Processing/Donor_calling_and_doublet.ipynb](code/Initial_Data_Processing/Donor_calling_and_doublet.ipynb)
  		- After calling the donors, this just makes the data structure more manageable, and sets padj cutoffs for final donor calls.  
